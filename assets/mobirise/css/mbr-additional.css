@@ -1,0 +1,34 @@
+#dropdown-menu-a .hide-buttons [data-button] {
+  display: none !important;
+}
+#dropdown-menu-a .navbar-brand a {
+  font-size: 14px;
+}
+#dropdown-menu-a .nav .link,
+#dropdown-menu-a .dropdown-item {
+  font-size: 1em;
+  color: #ffffff;
+}
+#dropdown-menu-a .navbar,
+#dropdown-menu-a .dropdown-menu {
+  background: #333333;
+}
+#dropdown-menu-a .dropdown-menu .dropdown-toggle[aria-expanded="true"],
+#dropdown-menu-a .dropdown-menu a:hover,
+#dropdown-menu-a .dropdown-menu a:focus {
+  background: #292929;
+}
+#dropdown-menu-a .navbar-toggler {
+  color: #ffffff;
+}
+#content5-q .mbr-header .mbr-header__text {
+  text-align: center;
+  color: #fff;
+}
+#content5-q .mbr-header .mbr-header__subtext {
+  text-align: center;
+  color: #fff;
+}
+#content5-q .mbr-article {
+  color: #fff;
+}
