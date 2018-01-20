@@ -8,14 +8,18 @@
       "styling": {}
     },
     "versionFirst": "3.12",
-    "uniqCompNum": 29,
-    "versionPublish": "3.12"
+    "uniqCompNum": 67,
+    "versionPublish": "3.12",
+    "favicon": "@PROJECT_PATH@/assets/images/logo-mini-128x75.png",
+    "noImageResize": "",
+    "cookiesAlert": "",
+    "google-analytics": ""
   },
   "pages": {
     "index.html": {
       "settings": {
         "main": true,
-        "title": "",
+        "title": "ARTEAGA - Artículos Religiosos - Index",
         "meta_descr": "",
         "header_custom": "",
         "footer_custom": "",
@@ -24,56 +28,55 @@
       "components": [
         {
           "_styles": {
-            ".hide-buttons [data-button]": {
-              "display": "none !important"
+            ".mbr-brand__name": {
+              "font-size": "16px"
             },
-            ".navbar-brand a": {
-              "font-size": "14px"
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
             },
-            ".nav .link, .dropdown-item": {
-              "font-size": "1em",
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
               "color": "#ffffff"
             },
-            ".navbar, .dropdown-menu": {
-              "background": "#333333"
-            },
-            ".dropdown-menu .dropdown-toggle[aria-expanded=\"true\"], .dropdown-menu a:hover, .dropdown-menu a:focus": {
-              "background": "#292929"
-            },
-            ".navbar-toggler": {
-              "color": "#ffffff"
+            ".mbr-brand__name a P": {
+              "font-size": "16px"
             }
           },
           "_tags": [
             "Theme"
           ],
-          "_name": "dropdown-menu",
-          "_anchor": "dropdown-menu-a",
+          "_name": "menu",
+          "_anchor": "menu-t",
           "_params": {
-            "bgColor": "#333333",
-            "fontSize": 1,
-            "fontName": {},
-            "fontColor": "#ffffff",
+            "color": "#2c2c2c",
+            "hamburgerColor": "#ffffff",
             "transparent": true,
             "sticky": true,
+            "collapsed": false,
             "logo": true,
             "showBrand": true,
-            "hideButtons": true
+            "showButtons": false
           },
           "logo": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/logo-small-216x128.png",
-              "class": "",
+              "src": "@PROJECT_PATH@/assets/images/logo-216x128.png",
+              "class": "mbr-navbar__brand-img mbr-brand__img",
               "height": 128,
-              "alt": "",
+              "alt": "Mobirise",
               "link": "#top",
               "title": "",
               "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
             }
           },
-          "brand": "<a class=\"text-white\" data-app-selector=\".navbar-brand a\" data-app-btn=\"true\" href=\"https://mobirise.com\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\">ARTICULOS RELIGIOSOS</a>",
-          "items": "<li class=\"nav-item\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"#top\">CONOCENOS</a></li><li class=\"nav-item dropdown open\"><a data-app-btn=\"true\" class=\"nav-link link dropdown-toggle\" data-toggle=\"dropdown-submenu\" href=\"index.html#content5-q\" aria-expanded=\"true\">CATÁLOGO</a><div class=\"dropdown-menu\"><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#content5-q\">ALCANCÍAS / URNAS</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#content5-q\">ORFEBFRERÍA</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#content5-q\">SAGRARIOS 20 x 30</a><a data-app-btn=\"true\" class=\"dropdown-item\" href=\"index.html#content5-q\">SAGRARIOS 40 x 30</a></div></li><li class=\"nav-item dropdown\"><a data-app-btn=\"true\" class=\"nav-link link\" href=\"index.html#map2-o\" aria-expanded=\"false\">CONTACTANOS</a></li><li class=\"nav-item nav-btn\"><a data-app-btn=\"true\" data-button=\"\" data-app-selector=\".btn\" class=\"nav-link btn btn-default btn-default-outline\" href=\"https://mobirise.com/\">DOWNLOAD</a></li>"
+          "brand": "<a class=\"mbr-brand__name text-white\" data-app-btn=\"true\" href=\"index.html\" data-app-selector=\".mbr-brand__name a\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>ARTÍCULOS RELIGIOSOS</p></a>",
+          "items": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"#top\">INICIO</a></li><li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#features1-z\">CATÁLOGO</a></li> <li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#form1-v\">CONTÁCTENOS</a></li>",
+          "buttons": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"parent\" class=\"mbr-buttons__btn btn btn-default\" data-app-selector=\".mbr-navbar__items a\" href=\"https://mobirise.com\">DOWNLOAD</a></li>"
         },
         {
           "_afterNavbarItem": ".mbr-section > .mbr-box__magnet",
@@ -81,27 +84,35 @@
             "Theme"
           ],
           "_name": "slider",
+          "_styles": {
+            "H1": {
+              "text-align": "center"
+            },
+            "P": {
+              "text-align": "center"
+            }
+          },
           "_params": {
-            "autoplay": true,
+            "autoplay": false,
             "paddingTop": 3,
             "paddingBottom": 3,
             "slides": [
               {
-                "active": false,
+                "active": true,
                 "image": "@PROJECT_PATH@/assets/images/slide1-2000x1350.jpg",
-                "contentAlign": "right",
+                "contentAlign": "center",
                 "overlay": true,
                 "showTitle": true,
                 "title": "¿Quiénes somos?",
                 "showText": true,
-                "text": "Somos una organización especializada en la fabricación y venta de Articulos Religiosos, que gracias a nuestro esfuerzo de mejora continua, y nuestro personal altamente calificado, nos han llevado a que nuestros clientes nos recomienden dentro del mercado.",
+                "text": "Somos una organización especializada en la fabricación y venta de articulos religiosos, que gracias a nuestro esfuerzo de mejora continua, y nuestro personal altamente calificado, nos han llevado a que nuestros clientes nos recomienden dentro del mercado.",
                 "showButtons": false,
                 "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">FOR MAC</a>"
               },
               {
                 "active": false,
                 "image": "@PROJECT_PATH@/assets/images/slide2-2000x1350.jpg",
-                "contentAlign": "left",
+                "contentAlign": "center",
                 "overlay": true,
                 "showTitle": true,
                 "title": "Más de tres décadas",
@@ -111,7 +122,7 @@
                 "buttons": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"https://mobirise.com\">FOR WINDOWS</a> <a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">FOR MAC</a>"
               },
               {
-                "active": true,
+                "active": false,
                 "image": "@PROJECT_PATH@/assets/images/slide3-2000x1350.jpg",
                 "contentAlign": "center",
                 "overlay": true,
@@ -131,32 +142,26 @@
           "articleLayout": false
         },
         {
-          "_inherit": "msg-box3",
-          "_styles": {
-            ".mbr-header .mbr-header__text": {
-              "text-align": "center",
-              "color": "#fff"
-            },
-            ".mbr-header .mbr-header__subtext": {
-              "text-align": "center",
-              "color": "#fff"
-            },
-            ".mbr-article": {
-              "color": "#fff"
-            }
-          },
           "_tags": [
             "Theme"
           ],
-          "_name": "content5",
-          "_anchor": "content5-q",
+          "_name": "features1",
+          "_styles": {
+            ".mbr-section-title .mbr-header__text": {
+              "color": "#ffffff"
+            },
+            ".mbr-section__col .mbr-header__text": {
+              "color": "#efefef"
+            },
+            "P": {
+              "color": "#efefef",
+              "font-size": "14px"
+            }
+          },
+          "_anchor": "features1-z",
           "_params": {
-            "showCaption": "noCaption",
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "showTitle": true,
-            "showText": true,
-            "showButton": false,
+            "paddingTop": "1",
+            "paddingBottom": "1",
             "bgImageRadio": true,
             "parallax": true,
             "bgImage": "images/bg3.jpg",
@@ -167,75 +172,209 @@
             },
             "bgVideoRadio": false,
             "overlay": true,
-            "overlayOpacity": "0.5",
-            "overlayColor": "#000000",
-            "showMeta": false,
-            "darkBackground": true
+            "overlayOpacity": "0.6",
+            "overlayColor": "#222",
+            "showHeader": true,
+            "showSubheader": false,
+            "columns": 4,
+            "showImages": true,
+            "showTitles": true,
+            "showCaptions": true,
+            "showButtons": true
           },
-          "title": "CATÁLOGO",
-          "meta": "By John Smith posted July 30, 2015",
-          "text": "<p>Elija entre una amplia gama de nuestros trabajos, los cuales pueden ser completamente personalizados para encajar en sus necesidades y deseos, disfrute del refinado trabajo y técnica únicos que nos distingue y destaca en el mercado, y entérese de el porque nuestros clientes nos recomiendadan ampliamente y que nos hace únicos.</p>",
-          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
+          "headerAlign": "left",
+          "header": "CATÁLOGO",
+          "subheader": "Elija entre una amplia gama de nuestros trabajos, los cuales pueden ser completamente personalizados para encajar en sus necesidades y deseos, disfrute del refinado trabajo y técnica únicos que nos distingue y destaca en el mercado, y entérese de el porque nuestros clientes nos recomiendadan ampliamente y que nos hace únicos.",
+          "media1": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/12-600x670.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title1": "ALCANCIAS Y URNAS",
+          "caption1": "Alcancias y urnas hechas a mano con un exquisito acabado y siempre con los mejores materiales.",
+          "button1": "<a data-app-btn=\"true\" href=\"catalogo1.html\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-primary\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MIRAR MÁS...</a>",
+          "media2": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/09-600x670.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title2": "ORFEBRERÍA",
+          "caption2": "Ingenio plasmado por medio de una rigurosa y cuidadosa técnica que hacen de nuestro trabajo, un arte.",
+          "button2": "<a data-app-btn=\"true\" href=\"catalogo2.html\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-primary\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MIRAR MÁS...</a>",
+          "media3": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/04-600x670.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title3": "SAGRARIOS",
+          "caption3": "También contamos con variedad en sagrarios y tabernáculos donde hostias y reliquias puedan estar seguras.",
+          "button3": "<a data-app-btn=\"true\" href=\"catalogo3.html\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-primary\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MIRAR MÁS...</a>",
+          "media4": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/08-600x670.png",
+              "class": "mbr-figure__img",
+              "width": 600,
+              "link": "",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title4": "ESPECIALES",
+          "caption4": "¿Necesita algo en especial? <br>Nos ajustamos a sus necesidades y demandas, nosotros se lo elaboramos.",
+          "button4": "<a data-app-btn=\"true\" href=\"catalogo4.html\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-primary\" data-toolbar=\"-mbrBtnMove\" target=\"_blank\">MIRAR MÁS...</a>",
+          "media5": {
+            "image": {
+              "active": true,
+              "src": "images/blocks.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title5": "TRENDY WEBSITE BLOCKS",
+          "caption5": "Choose from the large selection of latest pre-made blocks - jumbotrons, hero images, parallax scrolling, video backgrounds, hamburger menu, sticky header and more.",
+          "button5": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>",
+          "media6": {
+            "image": {
+              "active": true,
+              "src": "images/host.png",
+              "class": "mbr-figure__img",
+              "width": 600
+            },
+            "video": {
+              "class": "mbr-figure__img",
+              "src": "http://www.youtube.com/embed/sOSTC6FM6Bw"
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-features1",
+              "link": "",
+              "size": 0
+            }
+          },
+          "title6": "HOST ANYWHERE",
+          "caption6": "Publish your website to a local drive, FTP or host on Amazon S3, Google Drive, Github. Don't limit yourself to just one platform or service provider.",
+          "button6": "<a data-app-btn=\"true\" href=\"https://mobirise.com\" class=\"mbr-buttons__btn btn btn-wrap btn-xs-lg btn-default\">LEARN MORE</a>"
         },
         {
           "_tags": [
             "Theme"
           ],
-          "_name": "gallery1",
-          "_params": {
-            "paddingTop": 3,
-            "paddingBottom": 3,
-            "images": [
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide1-small.jpg",
-                "image": "images/slide1.jpg",
-                "active": true
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide2-small.jpg",
-                "image": "images/slide2.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide3-small.jpg",
-                "image": "images/slide3.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide4-small.jpg",
-                "image": "images/slide4.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide5-small.jpg",
-                "image": "images/slide5.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide6-small.jpg",
-                "image": "images/slide6.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide7-small.jpg",
-                "image": "images/slide7.jpg"
-              },
-              {
-                "caption": "Type caption here",
-                "thumb": "images/slide8-small.jpg",
-                "image": "images/slide8.jpg"
-              }
-            ],
-            "showText": false,
-            "bgColor": "#4c6972",
-            "fullWidth": false,
-            "noGutter": true,
-            "showBullets": true
+          "_name": "form1",
+          "_styles": {
+            ".mbr-header__text": {
+              "color": "#ffffff"
+            }
           },
-          "_anchor": "gallery1-p",
-          "articleLayout": false
+          "_anchor": "form1-v",
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/mbr-192x128.jpg",
+            "bgColor": "#3c3c3c",
+            "bgColorRadio": true,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true
+          },
+          "title": "CONTÁCTENOS",
+          "form": {
+            "action": "omegamike666@gmail.com",
+            "alerts": {
+              "success": "¡Gracias!"
+            },
+            "fields": {
+              "name": {
+                "title": "Name",
+                "visible": true,
+                "customTitle": "Nombre*"
+              },
+              "email": {
+                "title": "Email",
+                "visible": true,
+                "customTitle": "Email*"
+              },
+              "phone": {
+                "title": "Phone",
+                "visible": false,
+                "customTitle": "Phone"
+              },
+              "message": {
+                "title": "Message",
+                "customTitle": "Message"
+              }
+            }
+          },
+          "buttons": "<a data-app-btn=\"true\" type=\"submit\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" data-toolbar=\"-mbrLink,-mbrBtnAdd,-mbrBtnMove\">ENVIAR</a>"
         },
         {
           "_tags": [
@@ -244,7 +383,7 @@
           "_name": "contacts2",
           "_anchor": "contacts2-r",
           "_params": {
-            "paddingTop": 3,
+            "paddingTop": "1",
             "paddingBottom": 3,
             "bgImageRadio": false,
             "parallax": true,
@@ -283,6 +422,927 @@
             "overlayColor": "#444444"
           },
           "text": "Copyright (c) 2015 Company Name. <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Terms of Use</a>  | <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Privacy Policy</a>"
+        }
+      ]
+    },
+    "catalogo1.html": {
+      "settings": {
+        "title": "ARTEAGA - ALCANCIAS Y URNAS",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-brand__name": {
+              "font-size": "16px"
+            },
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
+            },
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
+              "color": "#ffffff"
+            },
+            ".mbr-brand__name a P": {
+              "font-size": "16px"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-10",
+          "_params": {
+            "color": "#2c2c2c",
+            "hamburgerColor": "#ffffff",
+            "transparent": true,
+            "sticky": true,
+            "collapsed": false,
+            "logo": true,
+            "showBrand": true,
+            "showButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/logo-216x128.png",
+              "class": "mbr-navbar__brand-img mbr-brand__img",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "index.html",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"mbr-brand__name text-white\" data-app-btn=\"true\" href=\"index.html\" data-app-selector=\".mbr-brand__name a\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>ARTÍCULOS RELIGIOSOS</p></a>",
+          "items": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"#top\">INICIO</a></li><li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#features1-z\">CATÁLOGO</a></li> <li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#form1-v\">CONTÁCTENOS</a></li>",
+          "buttons": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"parent\" class=\"mbr-buttons__btn btn btn-default\" data-app-selector=\".mbr-navbar__items a\" href=\"https://mobirise.com\">DOWNLOAD</a></li>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-15",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#444444",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2015 Company Name. <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Terms of Use</a>  | <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Privacy Policy</a>"
+        },
+        {
+          "_inherit": "msg-box3",
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".mbr-article P": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-1f",
+          "_params": {
+            "showCaption": "noCaption",
+            "paddingTop": "0",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#3c3c3c",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.2,
+            "overlayColor": "#28324e",
+            "showMeta": false,
+            "darkBackground": true
+          },
+          "title": "ALCANCIAS Y URNAS",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>Hechas con los mejores materiales y un cuidadoso proceso de elaboración.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery1",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "images": [
+              {
+                "caption": "Alcancia de una ranura<br><br>Terminados:Dorado, Bronce<br>Material:Lamina de Fierro<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/01-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/01-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia de tres ranuras<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/02-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/02-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia plana<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/03-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/03-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia cuña<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/04-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/04-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia rotary<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/05-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/05-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia de combinación<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/06-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia tipo columna<br><br>Terminados:Dorado, Broncer<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/07-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/07-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia con bolsa<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/08-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/08-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia tipo cuña cón bolsa<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/09-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Alcancia para empotrar<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/10-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Urna de acero<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/11-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/11-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Urna de madera<br><br>Terminados:Dorado, Bronce<br>Material:Lamina Galvanizada<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/12-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/12-2000x2666.jpg",
+                "active": true
+              }
+            ],
+            "showText": true,
+            "bgColor": "#000000",
+            "fullWidth": false,
+            "noGutter": true,
+            "showBullets": true
+          },
+          "_anchor": "gallery1-16",
+          "articleLayout": false
+        }
+      ]
+    },
+    "catalogo2.html": {
+      "settings": {
+        "title": "ARTEAGA - ORFEBRERÍA",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-brand__name": {
+              "font-size": "16px"
+            },
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
+            },
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
+              "color": "#ffffff"
+            },
+            ".mbr-brand__name a P": {
+              "font-size": "16px"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1g",
+          "_params": {
+            "color": "#2c2c2c",
+            "hamburgerColor": "#ffffff",
+            "transparent": true,
+            "sticky": true,
+            "collapsed": false,
+            "logo": true,
+            "showBrand": true,
+            "showButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/logo-216x128.png",
+              "class": "mbr-navbar__brand-img mbr-brand__img",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "index.html",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"mbr-brand__name text-white\" data-app-btn=\"true\" href=\"index.html\" data-app-selector=\".mbr-brand__name a\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>ARTÍCULOS RELIGIOSOS</p></a>",
+          "items": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"#top\">INICIO</a></li><li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#features1-z\">CATÁLOGO</a></li> <li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#form1-v\">CONTÁCTENOS</a></li>",
+          "buttons": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"parent\" class=\"mbr-buttons__btn btn btn-default\" data-app-selector=\".mbr-navbar__items a\" href=\"https://mobirise.com\">DOWNLOAD</a></li>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-1h",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#444444",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2015 Company Name. <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Terms of Use</a>  | <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Privacy Policy</a>"
+        },
+        {
+          "_inherit": "msg-box3",
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".mbr-article P": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-1i",
+          "_params": {
+            "showCaption": "noCaption",
+            "paddingTop": "0",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#3c3c3c",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.2,
+            "overlayColor": "#28324e",
+            "showMeta": false,
+            "darkBackground": true
+          },
+          "title": "ORFEBRERÍA",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>Elaboración de alto nivel con grabados artísticos y bellos decorados.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery1",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "images": [
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/01-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/01-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Espiga y Uvas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/02-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/02-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/03-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/03-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Cáliz Dorado<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/04-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/04-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/05-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/05-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Espiga y Uvas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/06-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Espiga y Uvas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/07-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/07-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Cáliz Dorado<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/08-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/08-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/09-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/10-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Corona de Espinas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/11-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/11-1-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Espiga y Uvas<br><br>Terminados:Dorado, Bronce<br>Acabados:Fondo plateado con incrustaciones doradas bañado en pintura esmalte acrilico<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/12-1-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/12-1-2000x2666.jpg",
+                "active": true
+              }
+            ],
+            "showText": true,
+            "bgColor": "#000000",
+            "fullWidth": false,
+            "noGutter": true,
+            "showBullets": true
+          },
+          "_anchor": "gallery1-1j",
+          "articleLayout": false
+        }
+      ]
+    },
+    "catalogo3.html": {
+      "settings": {
+        "title": "ARTEAGA - SAGRARIOS 20x30",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-brand__name": {
+              "font-size": "16px"
+            },
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
+            },
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
+              "color": "#ffffff"
+            },
+            ".mbr-brand__name a P": {
+              "font-size": "16px"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1l",
+          "_params": {
+            "color": "#2c2c2c",
+            "hamburgerColor": "#ffffff",
+            "transparent": true,
+            "sticky": true,
+            "collapsed": false,
+            "logo": true,
+            "showBrand": true,
+            "showButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/logo-216x128.png",
+              "class": "mbr-navbar__brand-img mbr-brand__img",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "index.html",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"mbr-brand__name text-white\" data-app-btn=\"true\" href=\"index.html\" data-app-selector=\".mbr-brand__name a\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>ARTÍCULOS RELIGIOSOS</p></a>",
+          "items": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"#top\">INICIO</a></li><li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#features1-z\">CATÁLOGO</a></li> <li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#form1-v\">CONTÁCTENOS</a></li>",
+          "buttons": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"parent\" class=\"mbr-buttons__btn btn btn-default\" data-app-selector=\".mbr-navbar__items a\" href=\"https://mobirise.com\">DOWNLOAD</a></li>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-1m",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#444444",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2015 Company Name. <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Terms of Use</a>  | <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Privacy Policy</a>"
+        },
+        {
+          "_inherit": "msg-box3",
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".mbr-article P": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-1n",
+          "_params": {
+            "showCaption": "noCaption",
+            "paddingTop": "0",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#3c3c3c",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.2,
+            "overlayColor": "#28324e",
+            "showMeta": false,
+            "darkBackground": true
+          },
+          "title": "SAGRARIOS 20x30",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>Sagrarios de 20x30 con elaborados y meticulosos diseños.</p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery1",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "images": [
+              {
+                "caption": "Terminado Ostia y Espigas<br><br>Terminados:Fondo plateado<br>Acabados:Incrustacion Dorada y Esmalte<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/01-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/01-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz con Cruz<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/02-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/02-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz con Cruz<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/03-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/03-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Peces con Cruz<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/04-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/04-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cruz con Pez<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/05-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/05-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz, Espigas y Uvas<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/06-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cruz y Cesto<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/07-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/07-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cruz con Cordero<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;",
+                "thumb": "@PROJECT_PATH@/assets/images/08-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/08-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Ángel Manifestador<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/09-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09-2-2000x2666.jpg",
+                "active": true
+              },
+              {
+                "caption": "Terminado Ostias con Pez<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/10-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Resurrección<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/11-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/11-2-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cordero y Cruz<br><br>Terminados:Dorado, Niquel<br>Acabados:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/12-2-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/12-2-2000x2666.jpg",
+                "active": false
+              }
+            ],
+            "showText": true,
+            "bgColor": "#000000",
+            "fullWidth": false,
+            "noGutter": true,
+            "showBullets": true
+          },
+          "_anchor": "gallery1-1o",
+          "articleLayout": false
+        }
+      ]
+    },
+    "catalogo4.html": {
+      "settings": {
+        "title": "ARTEAGA - SAGRARIOS 40x30",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            ".mbr-brand__name": {
+              "font-size": "16px"
+            },
+            "&.mbr-navbar--stuck .mbr-navbar__section": {
+              "background": "#2c2c2c"
+            },
+            ".mbr-navbar__section": {},
+            ".mbr-navbar__hamburger": {
+              "color": "#ffffff"
+            },
+            ".mbr-brand__name a P": {
+              "font-size": "16px"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "menu",
+          "_anchor": "menu-1q",
+          "_params": {
+            "color": "#2c2c2c",
+            "hamburgerColor": "#ffffff",
+            "transparent": true,
+            "sticky": true,
+            "collapsed": false,
+            "logo": true,
+            "showBrand": true,
+            "showButtons": false
+          },
+          "logo": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/logo-216x128.png",
+              "class": "mbr-navbar__brand-img mbr-brand__img",
+              "height": 128,
+              "alt": "Mobirise",
+              "link": "index.html",
+              "title": "",
+              "linkInNewWindow": false
+            },
+            "iconFont": {
+              "class": "mbr-iconfont mbr-iconfont-menu",
+              "link": "https://mobirise.com",
+              "size": 0
+            }
+          },
+          "brand": "<a class=\"mbr-brand__name text-white\" data-app-btn=\"true\" href=\"index.html\" data-app-selector=\".mbr-brand__name a\" data-app-placeholder=\"Type Brand Name\" data-toolbar=\"-mbrBtnMove,-mbrBtnAdd,-mbrBtnRemove,mbrColor\"><p>ARTÍCULOS RELIGIOSOS</p></a>",
+          "items": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"#top\">INICIO</a></li><li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#features1-z\">CATÁLOGO</a></li> <li class=\"mbr-navbar__item\"><a data-app-btn=\"true\" class=\"mbr-buttons__link btn mbr-menu-item text-white\" data-app-selector=\".mbr-navbar__items a\" href=\"index.html#form1-v\">CONTÁCTENOS</a></li>",
+          "buttons": "<li class=\"mbr-navbar__item\"><a data-app-btn=\"parent\" class=\"mbr-buttons__btn btn btn-default\" data-app-selector=\".mbr-navbar__items a\" href=\"https://mobirise.com\">DOWNLOAD</a></li>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "footer1",
+          "_anchor": "footer1-1r",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#444444",
+            "bgColorRadio": true,
+            "overlay": true,
+            "overlayOpacity": 0.8,
+            "overlayColor": "#444444"
+          },
+          "text": "Copyright (c) 2015 Company Name. <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Terms of Use</a>  | <a class=\"mbr-footer__link text-gray\" href=\"https://mobirise.com/\">Privacy Policy</a>"
+        },
+        {
+          "_inherit": "msg-box3",
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-header .mbr-header__subtext": {
+              "text-align": "center",
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            },
+            ".mbr-article P": {
+              "text-align": "center"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "content5",
+          "_anchor": "content5-1s",
+          "_params": {
+            "showCaption": "noCaption",
+            "paddingTop": "0",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showText": true,
+            "showButton": false,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#3c3c3c",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": true,
+            "overlayOpacity": 0.2,
+            "overlayColor": "#28324e",
+            "showMeta": false,
+            "darkBackground": true
+          },
+          "title": "SAGRARIOS 40x30",
+          "meta": "By John Smith posted July 30, 2015",
+          "text": "<p>Sagrarios de 40x30 con elaborados y meticulosos diseños.&nbsp;</p>",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-default\" href=\"https://mobirise.com\">LEARN MORE</a>"
+        },
+        {
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "gallery1",
+          "_params": {
+            "paddingTop": 3,
+            "paddingBottom": 3,
+            "images": [
+              {
+                "caption": "Terminado Ostia y Pescado<br><br>Terminados:Fondo plateado<br>Acabado des:Incrustaciones Doradas con Pintura Esmalte Acrilico&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/01-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/01-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz con Ostia<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/02-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/02-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz con Ostia<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/03-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/03-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz con Ostia<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/04-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/04-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz, Espigas y Uvas<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/05-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/05-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Cáliz, Espigas y Uvas<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/06-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/06-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Ángeles, Cáliz y Ostia<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/07-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/07-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Ostia con Incrustado<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/08-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/08-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Ostia y Cruz<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/09-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/09-3-2000x2666.jpg",
+                "active": false
+              },
+              {
+                "caption": "Terminado Ángeles, Cáliz y Ostia<br><br>Terminados:Dorado, Niquel<br>Acabado des:Motivo Cincelado&nbsp;<br>",
+                "thumb": "@PROJECT_PATH@/assets/images/10-3-2000x2666-800x1066.jpg",
+                "image": "@PROJECT_PATH@/assets/images/10-3-2000x2666.jpg",
+                "active": true
+              }
+            ],
+            "showText": true,
+            "bgColor": "#000000",
+            "fullWidth": false,
+            "noGutter": true,
+            "showBullets": true
+          },
+          "_anchor": "gallery1-1t",
+          "articleLayout": false
+        },
+        {
+          "_styles": {
+            ".mbr-header .mbr-header__text": {
+              "color": "#fff"
+            },
+            ".mbr-article": {
+              "color": "#fff"
+            }
+          },
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "msg-box1",
+          "_anchor": "msg-box1-1u",
+          "_params": {
+            "paddingTop": 2,
+            "paddingBottom": 3,
+            "bgImageRadio": false,
+            "parallax": true,
+            "bgImage": "images/bg3.jpg",
+            "bgColor": "#3C3C3C",
+            "bgColorRadio": true,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "bgVideoRadio": false,
+            "overlay": false,
+            "overlayOpacity": 0.5,
+            "overlayColor": "#222",
+            "showTitle": true,
+            "showText": true,
+            "showButtons": true
+          },
+          "title": "PRE MADE BLOCKS",
+          "text": "Mobirise comes with huge collection of pre made layouts to help make your development faster.",
+          "button": "<a data-app-btn=\"true\" class=\"mbr-buttons__btn btn btn-lg btn-danger\" href=\"https://mobirise.com\">START A JOURNEY</a>"
         }
       ]
     }
